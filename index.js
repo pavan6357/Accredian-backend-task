@@ -20,13 +20,13 @@ app.post("/api/referrals", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "pavansian156@gmail.com",
-        pass: "nior tzka dnfv raoi",
+        user: "your-email-@gmail.com",
+        pass: "Your-password",
       },
     });
 
     const mailOptions = {
-      from: "pavansian156@gmail.com",
+      from: "your-email-@gmail.com",
       to: refereeEmail,
       subject: "Referral from " + referrerName,
       text: `Hi ${refereeName},\n\nYou have been referred by ${referrerName} for our course. Please check it out!\n\nThanks,\nTeam`,
